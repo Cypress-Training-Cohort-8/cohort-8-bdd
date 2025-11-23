@@ -4,6 +4,9 @@ name: Regression Test
     branches:
       - main
 
+env:
+    CYPRESS_RECORD_KEY: ${{env.CYPRESS_RECORD_KEY}}
+
 jobs:
   execution:
     runs-on: ubuntu-latest
