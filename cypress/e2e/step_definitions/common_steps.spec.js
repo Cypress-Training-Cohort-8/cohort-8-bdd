@@ -20,7 +20,7 @@ Given(/^I am on the home page$/, () => {
 });
 
 When(/^I insert the email$/, () => {
-	cy.insertText(data.qaBrains.emailFld, emailAddress)
+	cy.insertText(data.isMojo.useremailFld, emailAddress)
 });
 
 When(/^I select the account type$/, () => {
@@ -28,7 +28,12 @@ When(/^I select the account type$/, () => {
 });
 
 When(/^I checked terms$/, () => {
-	cy.get('input#terms').check()
+	cy.get('input#term-box').check()
+});
+
+
+Then(/^I insert the OTP$/, () => {
+	cy.insertOTP(username)
 });
 
 Then(/^I should be signed in$/, () => {
@@ -40,5 +45,5 @@ When(/^I insert "([^"]*)" in the "([^"]*)"$/, (value,element) => {
 });
 
 When(/^I select the country as "([^"]*)"$/, (country) => {
-	cy.get('select[name="country_id"]').select(country)
+	cy.get('select#nationality').select(country)
 });
