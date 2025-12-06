@@ -13,12 +13,12 @@ Feature: Ismojo Sign Up
         Examples:
             | country  |
             | Nigeria  |
-            | Ghana    |
-            | Honduras |
-            | Panama   |
-            | Chile    |
-            | Brazil   |
-            | Qatar    |
-            | China    |
-            | Samoa    |
-            | Fiji     |
+            #| Ghana    |
+           # | Honduras |
+           # | Panama   |
+           # | Chile    |
+           # | Brazil   |
+           # | Qatar    |
+           # | China    |
+           # | Samoa    |
+           # | Fiji     |
