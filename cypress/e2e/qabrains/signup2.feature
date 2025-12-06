@@ -17,15 +17,15 @@ Feature: Signup
         Examples:
             | country  |
             | Nigeria  |
-            #| Ghana    |
-           # | Honduras |
-           # | Panama   |
-           # | Chile    |
-           # | Brazil   |
-           # | Qatar    |
-           # | China    |
-           # | Samoa    |
-           # | Fiji     |
+            | Ghana    |
+            | Honduras |
+            | Panama   |
+            | Chile    |
+            | Brazil   |
+            | Qatar    |
+            | China    |
+            | Samoa    |
+            | Fiji     |
 
 
 # @focus
