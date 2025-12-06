@@ -23,7 +23,7 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           record: true
-          command: npx cypress run --record --e2e --browser chrome --config baseUrl=https://staging.ismojo.com/signup --env tags='@dev'
+          command: npx cypress run --record --e2e --browser chrome --config baseUrl=https://staging.ismojo.com/signup --env tags=@dev
           
         env:
           CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_RECORD_KEY}}
