@@ -60,7 +60,7 @@ Cypress.Commands.add('insertText', (textFld, text) => {
 })
 
 Cypress.Commands.add('insertSomeText', (text, textFld) => {
-    cy.get(textFld).should('exist').and('be.visible').type(text)
+    cy.get(textFld).should('exist').and('be.visible').type(text, {force: true})
 })
 
 Cypress.Commands.add('insertOTP', (username) => {

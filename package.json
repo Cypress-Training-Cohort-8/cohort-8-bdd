@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open --e2e -b chrome"
+    "test": "npx cypress open --e2e -b chrome",
+    "ismojo": "npx cypress run --browser chrome --spec='cypress/e2e/ismojo/*.feature' --config baseUrl=https://staging.ismojo.com/signup",
+    "newurl": "npx cypress open --e2e --browser chrome --config baseUrl=https://staging.ismojo.com/signup"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +28,8 @@
     "html": {
       "enabled": true,
       "output": "cypress/reports/html/report.html"
-    }
+    },
+    "filterSpecs": true,
+    "omitFiltered": true
   }
 }
