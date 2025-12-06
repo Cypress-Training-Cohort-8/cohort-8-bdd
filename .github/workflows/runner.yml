@@ -3,6 +3,10 @@ name: Regression Test
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
+
 
 
 jobs:
@@ -14,8 +18,9 @@ jobs:
       - name: Execute Cypress
         uses: cypress-io/github-action@v6
         with:
-          command: npx cypress run --e2e --browser chrome --config baseUrl=https://staging.ismojo.com/signup --env tags='@dev'
           record: true
+          command: npx cypress run --record --e2e --browser chrome --config baseUrl=https://staging.ismojo.com/signup --env tags='@dev'
+          
         env:
           CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_RECORD_KEY}}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
