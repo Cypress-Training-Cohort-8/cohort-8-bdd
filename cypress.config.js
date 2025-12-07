@@ -7,7 +7,6 @@ const {
 const {
   createEsbuildPlugin,
 } = require("@badeball/cypress-cucumber-preprocessor/esbuild");
-const { fa } = require("@faker-js/faker");
 
 async function setupNodeEvents(on, config) {
   cypressSplit(on, config)
