@@ -22,13 +22,12 @@ jobs:
       - name: Execute Cypress
         uses: cypress-io/github-action@v6
         with:
-          parallel: true
-          record: true
-          command: npx cypress run --record --parallel --e2e --browser chrome --config baseUrl=https://staging.ismojo.com/signup --env tags=@dev
+          config: baseUrl=https://staging.ismojo.com/signup
+          env: tags=@dev
           
         env:
-          CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_RECORD_KEY}}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SPLIT: ${{ strategy.job-total }}
+          SPLIT_INDEX: ${{ strategy.job-index }}
 
       - name: Upload Test Results
         if: always()
