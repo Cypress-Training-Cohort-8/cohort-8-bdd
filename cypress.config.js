@@ -26,7 +26,7 @@ async function setupNodeEvents(on, config) {
 module.exports = defineConfig({
   projectId: "wikvfj",
   e2e: {
-    baseUrl: "https://qabrains.com/",
+    baseUrl: "https://staging.ismojo.com/signup",
     defaultCommandTimeout: 15000,
     viewportHeight: 960,
     viewportWidth: 1530,

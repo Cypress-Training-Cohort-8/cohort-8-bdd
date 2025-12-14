@@ -6,3 +6,7 @@ dist/
 cypress/reports/
 cypress/screenshots/
 cypress/video/
+log/
+.hyperexecuteignore
+he_conv.yaml
+lambdatest_run.json
