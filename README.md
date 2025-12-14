@@ -22,7 +22,7 @@
 2. Navigate into the cloned repository and open a terminal within it.
 3. To install the dependencies, you can run `npm ci` or `npm install` depending on how you wish to install.
 
-   > [!NOTE] `npm ci` means you're installing via the package-lock.json while `npm install` means you are installing via package.json
+   >  `npm ci` means you're installing via the package-lock.json while `npm install` means you are installing via package.json
    >
 
 ---
